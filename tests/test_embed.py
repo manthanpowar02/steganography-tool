@@ -142,3 +142,45 @@ def test_aes_wrong_password_fails():
             encrypted,
             "wrong_password"
         )
+
+from src.embed.secure_embed import (
+    secure_embed,
+    secure_extract
+)
+
+def test_secure_embed_extract():
+
+    secret = "Ultra Secret Message"
+
+    password = "MyStrongPassword"
+
+    secure_embed(
+        "tests/test_images/test_clean.png",
+        secret,
+        password,
+        "tests/test_images/secure_test.png"
+    )
+
+    extracted = secure_extract(
+        "tests/test_images/secure_test.png",
+        password
+    )
+
+    assert extracted == secret
+
+
+def test_wrong_password():
+
+    secure_embed(
+        "tests/test_images/test_clean.png",
+        "Secret",
+        "CorrectPassword",
+        "tests/test_images/wrong_pwd.png"
+    )
+
+    result = secure_extract(
+        "tests/test_images/wrong_pwd.png",
+        "WrongPassword"
+    )
+
+    assert "Wrong password" in result
