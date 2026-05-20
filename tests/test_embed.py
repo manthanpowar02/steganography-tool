@@ -104,3 +104,41 @@ class TestLSBEmbed:
     def test_bits_to_text_conversion(self):
 
         assert bits_to_text("01000001") == "A"
+
+from src.embed.aes_encrypt import (
+    encrypt_message,
+    decrypt_message
+)
+
+def test_aes_encrypt_decrypt_roundtrip():
+
+    msg = "Secret Message 12345"
+
+    pwd = "password123"
+
+    encrypted = encrypt_message(
+        msg,
+        pwd
+    )
+
+    decrypted = decrypt_message(
+        encrypted,
+        pwd
+    )
+
+    assert decrypted == msg
+
+
+def test_aes_wrong_password_fails():
+
+    encrypted = encrypt_message(
+        "secret",
+        "correct_password"
+    )
+
+    with pytest.raises(Exception):
+
+        decrypt_message(
+            encrypted,
+            "wrong_password"
+        )
