@@ -53,6 +53,7 @@ coverage.xml
 *.jpg
 *.jpeg
 *.dll
+
 .hypothesis/
 .pytest_cache/
 cover/
