@@ -1,8 +1,8 @@
 #include <cstring>
 #include <cstdint>
 
-extern "C" {
-
+extern "C" 
+{
     /*
      * Embed bits into pixel array using LSB
      */
