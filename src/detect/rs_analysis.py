@@ -17,7 +17,7 @@ def rs_analysis(
 
     pixels = np.array(
         img,
-        dtype=np.float64
+        dtype=np.uint8
     )
 
     group_size = 4
