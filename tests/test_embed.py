@@ -13,6 +13,21 @@ from src.embed.lsb_embed import (
     bits_to_text
 )
 
+from src.embed.aes_encrypt import (
+    encrypt_message,
+    decrypt_message
+)
+
+from src.embed.secure_embed import (
+    secure_embed,
+    secure_extract
+)
+
+from src.embed.image_utils import (
+    validate_image,
+    get_image_capacity
+)
+
 class TestLSBEmbed:
 
     def setup_method(self):
@@ -105,10 +120,6 @@ class TestLSBEmbed:
 
         assert bits_to_text("01000001") == "A"
 
-from src.embed.aes_encrypt import (
-    encrypt_message,
-    decrypt_message
-)
 
 def test_aes_encrypt_decrypt_roundtrip():
 
@@ -143,10 +154,6 @@ def test_aes_wrong_password_fails():
             "wrong_password"
         )
 
-from src.embed.secure_embed import (
-    secure_embed,
-    secure_extract
-)
 
 def test_secure_embed_extract():
 
@@ -184,3 +191,21 @@ def test_wrong_password():
     )
 
     assert "Wrong password" in result
+
+
+def test_validate_image():
+
+    assert validate_image(
+        "tests/test_images/test_clean.png"
+    )
+
+
+def test_capacity_calculation():
+
+    info = get_image_capacity(
+        "tests/test_images/test_clean.png"
+    )
+
+    assert info["can_use"]
+
+    assert info["max_bytes"] > 0
