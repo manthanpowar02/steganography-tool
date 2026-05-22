@@ -221,6 +221,12 @@ Deploy easily using Streamlit Cloud.
 
 ---
 
+## 🌐 Live Demo
+
+[Launch App](https://steganography-tool-5vrldgsgkkngmmgfkomazy.streamlit.app/)
+
+---
+
 ## 📌 Future Improvements
 
 - Deep-learning steganalysis
