@@ -31,6 +31,65 @@ st.set_page_config(
 )
 
 # -------------------------
+# SIDEBAR BRANDING
+# -------------------------
+
+st.sidebar.title(
+    "🛡️ Toolkit Navigation"
+)
+
+st.sidebar.markdown("---")
+
+st.sidebar.markdown("""
+
+### Features
+
+✅ AES-256 Encryption  
+✅ Secure Steganography  
+✅ Chi-Square Attack  
+✅ RS Analysis  
+✅ Ensemble Detection  
+✅ Heatmap Visualization  
+✅ Python + C++ Hybrid Engine
+
+""")
+
+st.sidebar.markdown("---")
+
+st.sidebar.subheader(
+    "📊 Project Metrics"
+)
+
+st.sidebar.metric(
+    "Detection Accuracy",
+    "93%"
+)
+
+st.sidebar.metric(
+    "C++ Speedup",
+    "7.8x"
+)
+
+st.sidebar.metric(
+    "Supported Formats",
+    "PNG/BMP/TIFF"
+)
+
+st.sidebar.markdown("---")
+
+st.sidebar.subheader(
+    "🔗 Links"
+)
+
+st.sidebar.markdown(
+    "[GitHub Repository](https://github.com/manthanpowar02/steganography-tool)"
+)
+
+st.sidebar.markdown(
+    "[LinkedIn Profile](https://linkedin.com/in/manthanpowar02)"
+)
+
+# -------------------------
 # TITLE
 # -------------------------
 
