@@ -107,23 +107,29 @@ steganography-tool/
 
 ## 🖼️ Screenshots
 
-### Dashboard
+## 🖥️ Dashboard
 
-(Add screenshot here)
-
----
-
-### Heatmap Visualization
-
-(Add screenshot here)
+![Dashboard](assets/dashboard.png)
 
 ---
 
-### Detection Report
+## 🔥 Heatmap Visualization
 
-(Add screenshot here)
+![Heatmap](assets/heatmap1.png)
+
+![Heatmap](assets/heatmap2.png)
 
 ---
+
+## 🕵️ Detection Report
+
+![Detection](assets/detection.png)
+
+---
+
+## 🔓 Secret Message Extraction
+
+![Extract](assets/extract.png)
 
 ## ⚙️ Installation
 
@@ -227,6 +233,6 @@ Deploy easily using Streamlit Cloud.
 
 ## 👨‍💻 Author
 
-Your Name
+Manthan Powar
 
 Cybersecurity • Steganography • Digital Forensics
