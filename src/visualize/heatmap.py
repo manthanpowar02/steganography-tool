@@ -215,9 +215,12 @@ if __name__ == "__main__":
     )
 
     # Generate heatmap
-    show_comparison(
+    generate_heatmap(
 
-        "tests/test_images/heatmap_clean.png",
+    "tests/test_images/heatmap_clean.png",
 
-        "tests/test_images/heatmap_stego.png"
-    )
+    "tests/test_images/heatmap_stego.png",
+
+    output_path=
+    "tests/test_images/heatmap_output.png"
+)
