@@ -13,3 +13,11 @@ Steganographic attack &amp; detection tool with AES-256 encryption and C++ accel
 Benchmark dataset:
 - 50 clean images
 - 50 stego images
+
+## Heatmap Visualization
+
+Original vs Stego vs Heatmap
+
+- Heatmaps amplify hidden LSB modifications
+- Used for forensic visualization
+- Helps localize suspicious embedding regions
