@@ -1,3 +1,14 @@
+## 🌟 Key Highlights
+
+- AES-256 encrypted steganography
+- 93% ensemble detection accuracy
+- Python + C++ hybrid architecture
+- Heatmap forensic visualization
+- Streamlit cybersecurity dashboard
+- Benchmark-driven evaluation
+
+---
+
 # 🛡️ Steganography Attack & Detection Toolkit
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
