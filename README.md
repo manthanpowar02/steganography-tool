@@ -127,7 +127,6 @@ steganography-tool/
 ## 🔥 Heatmap Visualization
 
 ![Heatmap](assets/heatmap1.png)
-
 ![Heatmap](assets/heatmap2.png)
 
 ---
@@ -243,8 +242,8 @@ Deploy easily using Streamlit Cloud.
 - Deep-learning steganalysis
 - GPU acceleration
 - Video steganography
-- Audio steganography
 - Batch forensic analysis
+- Audio steganography
 
 ---
 
